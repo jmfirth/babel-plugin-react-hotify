@@ -13,7 +13,8 @@
     "babel"
   ],
   "peerDependencies": {
-    "babel-core": "^5.0.0"
+    "babel-core": "^5.0.0",
+    "react-hotify": "~0.1.1"
   },
   "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
   "license": "MIT",

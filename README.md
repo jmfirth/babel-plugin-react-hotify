@@ -1,4 +1,4 @@
-# babel-plugin-react-hotify
+# babel-plugin-react-hotify *(warning: alpha quality)*
 
 >Note: this project is **unstable** and is a **work-in-progress evolution** of **[React Hot Loader](http://gaearon.github.io/react-hot-loader)**.  
 >**Don't use it for real projects yet, use [React Hot Loader](http://gaearon.github.io/react-hot-loader) instead.**

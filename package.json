@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-hotify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Babel plugin that enables react-hotify for all classes with render() method",
   "main": "index.js",
   "repository": {

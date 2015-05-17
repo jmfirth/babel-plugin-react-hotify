@@ -6,10 +6,19 @@ function isRenderMethod(member) {
          member.key.name === 'render';
 }
 
+function isHotifyDecorator(decorator) {
+  var expr = decorator.expression;
+  return expr && expr.callee && expr.callee.name === 'hotify';
+}
+
 module.exports = new Transformer('babel-plugin-react-hotify', {
   ClassDeclaration: function (node, parent, scope, file) {
     const hasRenderMethod = node.body.body.filter(isRenderMethod).length > 0;
     if (!hasRenderMethod) {
+      return;
+    }
+
+    if (node.decorators && node.decorators.filter(isHotifyDecorator).length > 0) {
       return;
     }
 
